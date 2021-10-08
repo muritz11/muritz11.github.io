@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #121212;
+    color: white;
+}
+
+header{
+    min-height: 100vh;
+}
+
+nav{
+    position: relative;
+}
+
+#about, #services, #projects{
+    margin-bottom: 270px;
+}
+
+.project{
+    margin-top: 120px;
+}
+
+.project .icon {
+    height: 400px;
+}
+
+.project .icon img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icon button i{
+    background: #198754;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    display: none;
+}
+
+.icon button:hover i{
+    display: inline;
+    transform: scale(1.2);
+}
+.icon button:hover{
+    transition: .5s;
+    background: rgba(0, 0, 0, .4);
+}
+
+#navigation{
+    background: rgba(61, 64, 66, .4);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+#navigation .topnav a{
+    color: #fff;
+    display: block;
+    line-height: 30px;
+}
+#navigation .topnav a:hover{
+    color: #198754;
+}
+
+/*not working*/
+.about div h4 a:hover{
+    color: #11643d;
+}
+
+
+#imgModal{
+    background: rgba(0, 0, 0, .4);
+    display: none;
+    overflow: auto;
+}
+
+.modal-content{
+    max-width: 700px;
+    max-height: 95%;
+    border-radius: 10px;
+    animation-name: zoom;
+    animation-duration: .6s;
+}
+
+.close-img{
+    top: 0;
+    right: 5px;
+    font-size: 40px;
+    transition: .3s;
+}
+
+.close-img:hover{
+    color: darkgrey !important;
+}
+
+.go2top{
+    bottom: 30px;
+    right: 30px;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
