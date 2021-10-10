@@ -259,6 +259,7 @@ nav{
 @media screen and (max-width: 400px) {
     #bg-holder{
         animation: none;
+        width: 0;
     }
 }
 
