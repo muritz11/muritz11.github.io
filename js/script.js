@@ -7,7 +7,6 @@ const icon = document.getElementsByClassName('icon');
 let modShown = false;
 const imgModal = document.getElementById('imgModal');
 const img = document.getElementById('modImg');
-const caption = document.getElementById('caption');
 const xImg = document.getElementById('closeImage');
 
 menuBtn.onclick = () => { openNav() }
@@ -15,7 +14,7 @@ xNav.onclick = () => { closeNav() }
 
 const openNav = () => {
     nav.style.padding = "20px";
-    nav.style.width = "30%";
+    nav.style.width = "50%";
     menuBtn.className = "d-none";
 }
 
@@ -32,7 +31,7 @@ for (let index of icon) {
         let imgSrc = clickedImg.getAttribute("src");
         let imgAlt = clickedImg.getAttribute("alt");
 
-        imgModal.style.display = "flex";
+        imgModal.style.display = "block";
         img.src = imgSrc;
         img.alt = imgAlt;
         modShown = true;

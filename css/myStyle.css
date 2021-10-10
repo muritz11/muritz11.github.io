@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -11,6 +15,7 @@ html{
 body{
     background-color: #121212;
     color: white;
+    overflow-x: hidden;
 }
 
 header{
@@ -66,7 +71,7 @@ nav{
     position: fixed;
     top: 0;
     right: 0;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 #navigation .topnav a{
@@ -79,7 +84,7 @@ nav{
 }
 
 /*not working*/
-.about div h4 a:hover{
+#about div h4 a:hover{
     color: #11643d;
 }
 
@@ -91,7 +96,7 @@ nav{
 }
 
 .modal-content{
-    max-width: 700px;
+    max-width: clamp(200px, 50%, 700px);
     max-height: 95%;
     border-radius: 10px;
     animation-name: zoom;
@@ -116,6 +121,147 @@ nav{
     padding: 10px 10px;
 }
 
+#about{
+    padding-top: 120px;
+    box-shadow: 0 -40px 30px grey;
+
+}
+
+.social i, .serv-icon{
+    transition: .5s;
+}
+
+.social i:hover, .serv:hover .serv-icon{
+    transform: translateY(-5px);
+}
+
+.social .fa-twitter:hover{
+    color: #23A9F2 !important;
+}
+.social .fa-github:hover{
+    color: #fff !important;
+}
+.social .fa-linkedin:hover{
+    color: #0A66C2  !important;
+}
+
+/* background anime */
+#bg-holder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg_stars.jpg');
+    background-position-x: center;
+    background-size: cover;
+    animation: animeBg 50s linear infinite;
+    z-index: -1;
+    opacity: .3;
+}
+
+.stars span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .1),
+    0 0 0 8px rgba(255, 255, 255, .1),
+    0 0 0 20px rgba(255, 255, 255, .1);
+    animation: animate 3s linear infinite;
+}
+
+.stars span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+.stars span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+
+.stars span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.stars span:nth-child(3){
+    top: 80px;
+    right: 0;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.stars span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.stars span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.stars span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.stars span:nth-child(7){
+    top: 300px;
+    right: 0;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.stars span:nth-child(8){
+    top: 0;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.stars span:nth-child(9){
+    top: 0;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.stars span:nth-child(10){
+    top: 0;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+
+@media screen and (max-width: 400px) {
+    #bg-holder{
+        animation: none;
+    }
+}
+
 @keyframes zoom {
     from {
         transform: scale(0);
@@ -125,3 +271,25 @@ nav{
     }
 }
 
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes animeBg {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
