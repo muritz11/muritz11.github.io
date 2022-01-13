@@ -166,7 +166,7 @@ nav{
     left: 50%;
     width: 10px;
     height: 7px;
-    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #198754, rgba(0, 0, 255, 0));
     border-radius: 50%;
     animation: animate 3s linear infinite;
 }
@@ -178,8 +178,8 @@ nav{
     transform: translateY(-50%);
     width: 300px;
     height: 4px;
-    background: linear-gradient(45deg, #5f91ff, rgba(0, 0, 255, 0));
-    filter: drop-shadow(0 0 6px #699bff);
+    background: linear-gradient(45deg, #198754, rgba(0, 0, 255, 0));
+    filter: drop-shadow(0 0 6px #198754);
     /* border-radius: 100%; */
 }
 
