@@ -34,14 +34,25 @@ nav{
     margin-top: 120px;
 }
 
-.project .icon {
+/* .project .icon {
     height: 400px;
+} */
+
+.project-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-container img{
+    border-radius: 5px;
 }
 
 .project .icon img{
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
+    object-fit: contain;
 }
 
 .icon button i{
@@ -127,8 +138,15 @@ nav{
 
 }
 
+.social a{
+    margin-right: 10px;
+}
 .social i, .serv-icon{
     transition: .5s;
+}
+
+.w-75-85{
+    width: 75%;
 }
 
 .social i:hover, .serv:hover .serv-icon{
@@ -259,6 +277,14 @@ nav{
     #bg-holder{
         animation: none;
         width: 0;
+    }
+    
+    #about, #services, #projects{
+        margin-bottom: 150px;
+    }
+
+    .w-75-85{
+        width: 80%;
     }
 }
 
