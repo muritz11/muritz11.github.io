@@ -40,7 +40,7 @@ nav{
 
 .project-image-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -72,17 +72,22 @@ nav{
     background: rgba(0, 0, 0, .4);
 }
 
+.fix-bottom{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
 #navigation{
-    background: rgba(61, 64, 66, .4);
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    background: rgba(61, 64, 66, .96);
     width: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
     right: 0;
     transition: 0.7s;
+    height: 100%;
 }
 
 #navigation .topnav a{
@@ -90,8 +95,9 @@ nav{
     display: block;
     line-height: 30px;
 }
-#navigation .topnav a:hover{
+#navigation .topnav a:hover, .topnav-lg a:hover{
     color: #198754;
+    transition: .3s ease-in-out;
 }
 
 /*not working*/
@@ -161,6 +167,15 @@ nav{
 }
 .social .fa-linkedin:hover{
     color: #0A66C2  !important;
+}
+
+.topnav-lg a{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.topnav-lg a:last-child{
+    margin-right: 0;
 }
 
 /* background anime */
@@ -273,20 +288,30 @@ nav{
     animation-duration: 2.25s;
 }
 
-@media screen and (max-width: 400px) {
-    #bg-holder{
-        animation: none;
-        width: 0;
+#navtoggle{
+    display: none;
+}
+
+@media screen and (max-width: 736px) {
+    .topnav-lg{
+        display: none;
     }
-    
+
+    #navtoggle{
+        display: inline-block;
+    }
     #about, #services, #projects{
         margin-bottom: 150px;
     }
-
+    
     .w-75-85{
         width: 80%;
     }
 }
+
+/* @media screen and (max-width: 400px) {
+    
+} */
 
 @keyframes zoom {
     from {

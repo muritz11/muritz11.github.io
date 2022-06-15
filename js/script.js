@@ -1,7 +1,8 @@
 
-const menuBtn = document.getElementById('navicon');
+const menuBtn = document.getElementById('navtoggle');
 const nav = document.getElementById('navigation');
 const xNav = document.getElementsByClassName('btn-close')[0];
+const navSocials = document.getElementsByClassName('fix-bottom')[0];
 const icon = document.getElementsByClassName('icon');
 
 let modShown = false;
@@ -13,15 +14,17 @@ menuBtn.onclick = () => { openNav() }
 xNav.onclick = () => { closeNav() }
 
 const openNav = () => {
-    nav.style.padding = "20px";
-    nav.style.width = "50%";
+    nav.style.padding = "40px";
+    nav.style.width = "100%";
     menuBtn.className = "d-none";
+    navSocials.style.display = 'block';
 }
 
 const closeNav = () => {
     nav.style.width = "0";
     nav.style.padding = "0";
     menuBtn.className = "block";
+    navSocials.style.display = 'none';
 }
 
 for (let index of icon) {

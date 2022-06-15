@@ -17,45 +17,51 @@
 <body>
     <main>
 
-        <header class="w-75-85 m-auto">
-            <nav class="row pt-4">
-                <div class="col-7">
-                    <h1 class="animate__animated animate__slideInLeft">Muritz<span class="text-success">.</span></h1>
-                </div>
-
-                <div class="col-5 text-end">
-                    <a href="javascript:void(0);" id="navicon">
-                        <i class="fas fa-bars fa-2x text-white animate__animated animate__slideInRight"></i>
-                    </a>
-                    <div id="navigation" class="mt-4">
-                        <div class="text-success fw-bolder text-start">
-                            NAVIGATION
-                            <div class="btn btn-close btn-lg text-white float-end">X</div>
-                        </div>
-                        <div class="topnav text-start p-3 fw-bolder">
+        <header class="position-relative overflow-hidden">
+            <section class="w-75-85 m-auto">
+                <nav class="row pt-4">
+                    <div class="col-5">
+                        <h1 class="animate__animated animate__slideInLeft">Muritz<span class="text-success">.</span></h1>
+                    </div>
+    
+                    <div class="col-7 text-end">
+                        <div class="topnav-lg text-end p-3 pe-0 fw-bolder">
                             <a href="#" class="text-decoration-none">Home</a>
                             <a href="#about" class="text-decoration-none">About</a>
                             <a href="#services" class="text-decoration-none">Services</a>
                             <a href="#projects" class="text-decoration-none">Projects</a>
                         </div>
-                        <div class="social pb-2">
-                            <a href="https://twitter.com/Cart_el990?s=09" target="_blank"><i class="fab fa-twitter fa-2x text-muted"></i></a>
-                            <a href="https://github.com/muritz11" target="_blank"><i class="fab fa-github fa-2x text-muted"></i></a>
-                            <a href="https://www.linkedin.com/in/maurice-chisom-804325207" target="_blank"><i class="fab fa-linkedin fa-2x text-muted"></i></a>
-                        </div>
+                        <a href="javascript:void(0);" id="navtoggle">
+                            <i class="fas fa-bars fa-2x text-white animate__animated animate__slideInRight"></i>
+                        </a>
                     </div>
+                </nav>
+    
+                <div class="content text-center min-vh-100 d-flex flex-column align-content-center justify-content-center">
+                    <h3 class="text-white-50 animate__animated animate__slideInUp">HELLO! I'M</h3>
+                    <h1 class="animate__animated animate__slideInUp">ABUGUJA MAURICE</h1>
                 </div>
-            </nav>
+            </section>
 
-            <div class="content text-center min-vh-100 d-flex flex-column align-content-center justify-content-center">
-                <h3 class="text-white-50 animate__animated animate__slideInUp">HELLO! I'M</h3>
-                <h1 class="animate__animated animate__slideInUp">ABUGUJA MAURICE</h1>
-            </div>
+            <!-- stars -->
+            <section id="bg-holder" class="stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+            
         </header>
 
         <section id="about">
             <div class="w-75-85 m-auto row">
-                <div class="col-md-4 d-flex justify-content-end">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
                     <img src="./images/astronaut-animate.svg" alt="" class="h-75">
                 </div>
                 <div class="col-md-8">
@@ -123,7 +129,7 @@
 
             <div class="row project">
                 <div class="d-md-none">
-                    <div class="position-relative project-image-container">
+                    <div class="position-relative project-image-container justify-content-start">
                         <!-- <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
                             <i class="fa fa-search-plus"></i>
                         </button> -->
@@ -137,9 +143,13 @@
                         Canbel Technologies
                     </h3>
                     <p class="text-white-50">
-                        Contributed and maintained code for seamless Biometric card payment using Paystack payment gateway with PHP
+                        Contributed and maintained code for seamless Biometric card payment using Paystack payment gateway API
+
+                        <div class="stacks text-white-50 mb-4 d-flex flex-wrap">
+                            <div class="bg-dark mt-md-0 mt-3 me-2 p-2 rounded">PHP</div>
+                        </div>
                     </p>
-                    <a href="https://resourceedge-learnable.netlify.app/" target="_blank" class="text-decoration-none btn btn-outline-success">View Project</a>
+                    <a href="https://www.canbeltech.com/" target="_blank" class="text-decoration-none btn btn-outline-success">View Project</a>
                 </div>
                 <div class="col-md-6 d-md-block d-none">
                     <div class="position-relative project-image-container">
@@ -346,19 +356,25 @@
 
         </div>
 
-        <section id="bg-holder" class="stars">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="navigation">
+            <div class="position-relative">
+                <div class="text-success fw-bolder text-start">
+                    NAVIGATION
+                    <div class="btn btn-close btn-lg text-white float-end">X</div>
+                </div>
+                <div class="topnav text-start p-3 ps-0 fw-bolder">
+                    <a href="#" class="text-decoration-none" onclick="closeNav()">Home</a>
+                    <a href="#about" class="text-decoration-none" onclick="closeNav()">About</a>
+                    <a href="#services" class="text-decoration-none" onclick="closeNav()">Services</a>
+                    <a href="#projects" class="text-decoration-none">Projects</a>
+                </div>
+                <div class="social pb-2 fix-bottom">
+                    <a href="https://twitter.com/Cart_el990?s=09" target="_blank"><i class="fab fa-twitter fa-2x text-muted"></i></a>
+                    <a href="https://github.com/muritz11" target="_blank"><i class="fab fa-github fa-2x text-muted"></i></a>
+                    <a href="https://www.linkedin.com/in/maurice-chisom-804325207" target="_blank"><i class="fab fa-linkedin fa-2x text-muted"></i></a>
+                </div>
+            </div>
         </div>
-
     </main>
 </body>
 </html>
