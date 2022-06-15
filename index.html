@@ -64,7 +64,7 @@
                 <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
                     <img src="./images/astronaut-animate.svg" alt="" class="h-75">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 p-0">
                     <h2 class="font-weight-lighter">Hi! I'm Abuguja Maurice</h2>
                     <p class="pt-4 pb-2 text-white-50">
                         A Frontend developer well versed in HTML, CSS, Javascript, Boostrap and React, I also dabble with PHP, MYSQL and Laravel. I craft awesome websites, landing pages and web apps, helping clients develop user-centric digital products and experiences. <br><br>
@@ -90,46 +90,74 @@
 
         <section id="services" class="w-75-85 mx-auto">
             <p class="text-white-50 text-center">WHAT I DO</p>
-            <h1 class="text-center mb-5">Services</h2>
-                <div class="row">
-                    <div class="col-md-4 text-center serv">
-                        <div class="serv-icon m-3 text-success">
-                            <i class="fa fa-code fa-3x"></i>
-                        </div>
-                        <h3>Web Design</h3>
-                        <p class="text-white-50">
-                            I value simple, modern, clean design patterns and thoughtful interactive user interfaces and improved user experience.
-                        </p>
+            <h1 class="text-center mb-3">Services</h2>
+            <div class="row">
+                <div class="col-md-4 text-center serv">
+                    <div class="serv-icon m-3 text-success">
+                        <i class="fa fa-code fa-3x"></i>
                     </div>
-                    <div class="col-md-4 text-center serv">
-                        <div class="serv-icon m-3 text-success">
-                            <i class="fa fa-database fa-3x"></i>
-                        </div>
-                        <h3>Perfomance and SEO</h3>
-                        <p class="text-white-50">
-                            Maintain a striking balance between functional and aesthetic design, optimizing web page perfomance and SEO.
-                        </p>
-                    </div>
-                    <div class="col-md-4 text-center serv">
-                        <div class="serv-icon m-3 text-success">
-                            <i class="fa fa-mobile-alt fa-3x"></i>
-                        </div>
-                        <h3>Mobile friendly</h3>
-                        <p class="text-white-50">
-                            A responsive design makes your website accessible to all users, regardless of their devices.    
-                        </p>
-                    </div>
+                    <h3>Web Design</h3>
+                    <p class="text-white-50">
+                        I value simple, modern, clean design patterns and thoughtful interactive user interfaces and improved user experience.
+                    </p>
                 </div>
+                <div class="col-md-4 text-center serv">
+                    <div class="serv-icon m-3 text-success">
+                        <i class="fa fa-database fa-3x"></i>
+                    </div>
+                    <h3>Perfomance and SEO</h3>
+                    <p class="text-white-50">
+                        Maintain a striking balance between functional and aesthetic design, optimizing web page perfomance and SEO.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center serv">
+                    <div class="serv-icon m-3 text-success">
+                        <i class="fa fa-mobile-alt fa-3x"></i>
+                    </div>
+                    <h3>Mobile friendly</h3>
+                    <p class="text-white-50">
+                        A responsive design makes your website accessible to all users, regardless of their devices.    
+                    </p>
+                </div>
+            </div>
         </section>
 
 
         <section id="projects" class="w-75-85 mx-auto">
             <p class="text-white-50 text-center">RECENT WORKS</p>
-            <h1 class="text-center mb-5">Checkout a few of my projects</h2>
+            <h1 class="text-center mb-3">Checkout a few of my projects</h2>
+
+
+            <div class="row project">
+                <div class="col-md-6">
+                    <div class="icon position-relative">
+                        <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
+                            <i class="fa fa-search-plus"></i>
+                        </button>
+                        <img src="./images/evlerr.png" alt="project name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-white-50 mt-3">Real estate</p>
+                    <h3>
+                        Evlerr
+                    </h3>
+                    <p class="text-white-50">
+                        We're branding how you buy, sell, and rent. It's now easier to get into a place you love. So let's do this together.
+
+                        <div class="stacks text-white-50 mb-4 d-flex flex-wrap">
+                            <div class="bg-dark mt-md-0 mt-3 me-2 p-2 rounded">REACT</div>
+                            <div class="bg-dark mt-md-0 mt-3 me-2 p-2 rounded">REDUX</div>
+                            <div class="bg-dark mt-md-0 mt-3 me-2 p-2 rounded">Axios</div>
+                        </div>
+                    </p>
+                    <a href="https://nervous-elion-c82a1c.netlify.app/" target="_blank" class="text-decoration-none btn btn-outline-success">View Project</a>
+                </div>
+            </div>
 
             <div class="row project">
                 <div class="d-md-none">
-                    <div class="position-relative project-image-container justify-content-start">
+                    <div class="position-relative icon">
                         <!-- <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
                             <i class="fa fa-search-plus"></i>
                         </button> -->
@@ -152,7 +180,7 @@
                     <a href="https://www.canbeltech.com/" target="_blank" class="text-decoration-none btn btn-outline-success">View Project</a>
                 </div>
                 <div class="col-md-6 d-md-block d-none">
-                    <div class="position-relative project-image-container">
+                    <div class="position-relative icon">
                         <!-- <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
                             <i class="fa fa-search-plus"></i>
                         </button> -->
@@ -352,7 +380,7 @@
 
             <span class="close-img btn position-absolute fw-bolder text-white p-3" id="closeImage">&times;</span>
 
-            <img src="" alt="" id="modImg" class="d-block w-75 m-auto modal-content">
+            <img src="" alt="" id="modImg" class="d-block w-75 mt-5 m-auto modal-content">
 
         </div>
 
@@ -366,7 +394,7 @@
                     <a href="#" class="text-decoration-none" onclick="closeNav()">Home</a>
                     <a href="#about" class="text-decoration-none" onclick="closeNav()">About</a>
                     <a href="#services" class="text-decoration-none" onclick="closeNav()">Services</a>
-                    <a href="#projects" class="text-decoration-none">Projects</a>
+                    <a href="#projects" class="text-decoration-none" onclick="closeNav()">Projects</a>
                 </div>
                 <div class="social pb-2 fix-bottom">
                     <a href="https://twitter.com/Cart_el990?s=09" target="_blank"><i class="fab fa-twitter fa-2x text-muted"></i></a>

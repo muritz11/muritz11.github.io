@@ -80,7 +80,7 @@ nav{
 }
 
 #navigation{
-    background: rgba(61, 64, 66, .96);
+    background: rgba(61, 64, 66, .98);
     width: 0;
     overflow: hidden;
     position: fixed;
@@ -113,7 +113,7 @@ nav{
 }
 
 .modal-content{
-    max-width: clamp(200px, 50%, 700px);
+    /* max-width: clamp(200px, 50%, 700px); */
     max-height: 95%;
     border-radius: 10px;
     animation-name: zoom;
@@ -300,6 +300,7 @@ nav{
     #navtoggle{
         display: inline-block;
     }
+
     #about, #services, #projects{
         margin-bottom: 150px;
     }
@@ -309,9 +310,6 @@ nav{
     }
 }
 
-/* @media screen and (max-width: 400px) {
-    
-} */
 
 @keyframes zoom {
     from {
