@@ -8,23 +8,24 @@
     <link rel="icon" href="./images/Muritz-brand.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap-main/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="./css/ani.css/animate.min.css">
     <link rel="stylesheet" href="./css/myStyle.css">
+    <link rel="stylesheet" href="./css/aos-master/dist/aos.css">
+    <script src="./css/aos-master/dist/aos.js" defer></script>
     <script src="./js/script.js" defer></script>
     <title>Maurice - Frontend developer</title>
     <meta property="og:image" content="./images/Muritz-brand.png"/>
 </head>
 <body>
-    <main>
+    <section style="overflow-x: hidden;">
 
         <header class="position-relative overflow-hidden">
             <section class="w-75-85 m-auto">
                 <nav class="row pt-4">
                     <div class="col-5">
-                        <h1 class="animate__animated animate__slideInLeft">Muritz<span class="text-success">.</span></h1>
+                        <h1 data-aos="fade-right">Muritz<span class="text-success">.</span></h1>
                     </div>
     
-                    <div class="col-7 text-end">
+                    <div class="col-7 text-end" data-aos="fade-left">
                         <div class="topnav-lg text-end p-3 pe-0 fw-bolder">
                             <a href="#" class="text-decoration-none">Home</a>
                             <a href="#about" class="text-decoration-none">About</a>
@@ -38,8 +39,8 @@
                 </nav>
     
                 <div class="content text-center min-vh-100 d-flex flex-column align-content-center justify-content-center">
-                    <h3 class="text-white-50 animate__animated animate__slideInUp">HELLO! I'M</h3>
-                    <h1 class="animate__animated animate__slideInUp">ABUGUJA MAURICE</h1>
+                    <h3 class="text-white-50"  data-aos="fade-up" data-aos-delay="200">HELLO! I'M</h3>
+                    <h1 data-aos="fade-up">ABUGUJA MAURICE</h1>
                 </div>
             </section>
 
@@ -61,12 +62,12 @@
 
         <section id="about">
             <div class="w-75-85 m-auto row">
-                <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end" data-aos="fade-right" data-aos-duration="2000">
                     <img src="./images/astronaut-animate.svg" alt="" class="h-75">
                 </div>
                 <div class="col-md-8 p-0">
-                    <h2 class="font-weight-lighter">Hi! I'm Abuguja Maurice</h2>
-                    <p class="pt-4 pb-2 text-white-50">
+                    <h2 class="font-weight-lighter" data-aos="fade-down">Hello! I'm Abuguja Maurice</h2>
+                    <p class="pt-4 pb-2 text-white-50" data-aos="fade-up">
                         A Frontend developer well versed in HTML, CSS, Javascript, Boostrap and React, I also dabble with PHP, MYSQL and Laravel. I craft awesome websites, landing pages and web apps, helping clients develop user-centric digital products and experiences. <br><br>
 
                         My interest in web development started in 2019 when I decided to try out new digital skills — turns out i enjoy creating things that live on the internet! <br>
@@ -89,10 +90,10 @@
         </section>
 
         <section id="services" class="w-75-85 mx-auto">
-            <p class="text-white-50 text-center">WHAT I DO</p>
-            <h1 class="text-center mb-3">Services</h2>
+            <p class="text-white-50 text-center" data-aos="fade-up">WHAT I DO</p>
+            <h1 class="text-center mb-3" data-aos="fade-up">Services</h2>
             <div class="row">
-                <div class="col-md-4 text-center serv">
+                <div class="col-md-4 text-center serv" data-aos="zoom-in-up">
                     <div class="serv-icon m-3 text-success">
                         <i class="fa fa-code fa-3x"></i>
                     </div>
@@ -101,7 +102,7 @@
                         I value simple, modern, clean design patterns and thoughtful interactive user interfaces and improved user experience.
                     </p>
                 </div>
-                <div class="col-md-4 text-center serv">
+                <div class="col-md-4 text-center serv" data-aos="zoom-in-up">
                     <div class="serv-icon m-3 text-success">
                         <i class="fa fa-database fa-3x"></i>
                     </div>
@@ -110,7 +111,7 @@
                         Maintain a striking balance between functional and aesthetic design, optimizing web page perfomance and SEO.
                     </p>
                 </div>
-                <div class="col-md-4 text-center serv">
+                <div class="col-md-4 text-center serv" data-aos="zoom-in-up">
                     <div class="serv-icon m-3 text-success">
                         <i class="fa fa-mobile-alt fa-3x"></i>
                     </div>
@@ -124,11 +125,11 @@
 
 
         <section id="projects" class="w-75-85 mx-auto">
-            <p class="text-white-50 text-center">RECENT WORKS</p>
-            <h1 class="text-center mb-3">Checkout a few of my projects</h2>
+            <p class="text-white-50 text-center" data-aos="fade-up">RECENT WORKS</p>
+            <h1 class="text-center mb-3" data-aos="fade-up">Checkout a few of my projects</h2>
 
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-left">
                 <div class="col-md-6">
                     <div class="icon position-relative">
                         <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
@@ -155,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-right">
                 <div class="d-md-none">
                     <div class="position-relative icon">
                         <!-- <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
@@ -190,7 +191,7 @@
                 
             </div>
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-left">
                 <div class="col-md-6">
                     <div class="icon position-relative">
                         <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
@@ -217,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-right">
                 <div class="d-md-none">
                     <div class="icon position-relative">
                         <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
@@ -256,7 +257,7 @@
                 
             </div>
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-left">
                 <div class="col-md-6">
                     <div class="icon position-relative">
                         <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
@@ -288,7 +289,7 @@
             </div>
 
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-right">
                 <div class="d-md-none">
                     <div class="icon position-relative">
                         <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100">
@@ -325,7 +326,7 @@
             </div>
 
 
-            <div class="row project">
+            <div class="row project" data-aos="fade-left">
                 <div class="col-md-4">
                     <div class="icon position-relative">
                         <button class="btn btn-lg position-absolute top-0 start-0 h-100 w-100" id="uh">
@@ -372,7 +373,7 @@
         </footer>
 
 
-        <a href="#" class="btn btn-success position-fixed fa fa-angle-up go2top">
+        <a href="#" class="btn btn-success position-fixed fa fa-angle-up go2top"  data-aos="fade-up">
         </a>
 
 
@@ -403,6 +404,6 @@
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 </body>
 </html>

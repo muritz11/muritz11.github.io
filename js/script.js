@@ -54,5 +54,9 @@ window.onclick = (e) => {
     }
 }
 
+AOS.init({
+    duration: 1500,
+})
+
 //icon.forEach(element => {
 //});
