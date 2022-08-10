@@ -79,6 +79,12 @@ nav{
     display: none;
 }
 
+.resume-btn{
+    padding: 10px;
+    border: 1px solid #198754;
+    border-radius: 10px;
+}
+
 #navigation{
     background: rgba(61, 64, 66, .98);
     width: 0;
