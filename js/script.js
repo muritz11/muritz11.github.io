@@ -9,7 +9,10 @@ let modShown = false;
 const imgModal = document.getElementById('imgModal');
 const img = document.getElementById('modImg');
 const xImg = document.getElementById('closeImage');
+const yearElem = document.getElementById("year");
+const date = new Date();
 
+yearElem.innerHTML = date.getFullYear();
 menuBtn.onclick = () => { openNav() }
 xNav.onclick = () => { closeNav() }
 

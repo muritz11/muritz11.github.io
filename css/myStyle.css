@@ -85,6 +85,10 @@ nav{
     border-radius: 10px;
 }
 
+.small-txt {
+    font-size: 12px;
+}
+
 #navigation{
     background: rgba(61, 64, 66, .98);
     width: 0;
