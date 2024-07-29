@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './assets/styles/App.css'
 import './assets/styles/bootstrap-main/dist/css/bootstrap.min.css'
 import 'aos/dist/aos.css'
 import { Projects } from './data'
 import Astra from './assets/images/astronaut-animate.svg'
 import Resume from './assets/images/abuguja maurice.pdf'
+import Particles, { initParticlesEngine } from '@tsparticles/react'
+import { loadSlim } from '@tsparticles/slim'
+import { opt } from './particleObj'
 import { FaXTwitter, FaChevronUp } from 'react-icons/fa6'
 import {
   FaDatabase,
@@ -18,21 +21,30 @@ import AOS from 'aos'
 import Nav from './components/Nav'
 
 function App() {
+  const [particlesInit, setParticlesInit] = useState(false)
   const date = new Date()
   const currentYear = date.getFullYear()
 
   useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine)
+    }).then(() => {
+      setParticlesInit(true)
+    })
+  }, [])
+
+  useEffect(() => {
     AOS.init({
       once: true,
-      duration: 700,
+      duration: 1500,
       easing: 'ease-out-cubic',
     })
   }, [])
 
   return (
     <>
-      <header className="position-relative overflow-hidden">
-        <section className="w-75-85 m-auto">
+      <header className="position-relative overflow-hidden" id="header">
+        <section className="w-75-85 m-auto header-inner">
           <nav className="row pt-4">
             <div className="col-5">
               <h1 data-aos="fade-right">
@@ -67,6 +79,13 @@ function App() {
           <span></span>
           <span></span>
         </section>
+        {particlesInit && (
+          <Particles
+            id="tsparticles"
+            // particlesLoaded={particlesLoaded}
+            options={opt}
+          />
+        )}
       </header>
 
       <section id="about">
