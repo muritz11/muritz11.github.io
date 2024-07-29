@@ -224,7 +224,7 @@ function App() {
                 <div className="stacks text-white-50 mb-4 d-flex flex-wrap">
                   {project.tools.map((val, idxx) => (
                     <div
-                      className="bg-dark mt-md-0 mt-3 me-2 p-2 small-txt rounded"
+                      className="bg-dark mt-md-0 mt-3 me-2 p-2 small-txt rounded text-uppercase"
                       key={`tool-${idx}-${idxx}`}>
                       {val}
                     </div>
