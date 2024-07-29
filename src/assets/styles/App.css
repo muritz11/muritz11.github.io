@@ -20,6 +20,8 @@ body {
 #about, #services, #projects, .header-inner, footer {
   max-width: 1440px;
   margin-inline: auto !important;
+  position: relative;
+  z-index: 20;
 }
 
 header {
@@ -44,6 +46,7 @@ nav {
 
 .project {
   margin-top: 120px !important;
+  overflow-x: hidden;
 }
 
 /* .project .icon {

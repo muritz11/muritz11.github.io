@@ -79,13 +79,7 @@ function App() {
           <span></span>
           <span></span>
         </section>
-        {particlesInit && (
-          <Particles
-            id="tsparticles"
-            // particlesLoaded={particlesLoaded}
-            options={opt}
-          />
-        )}
+        {particlesInit && <Particles id="tsparticles" options={opt} />}
       </header>
 
       <section id="about">
