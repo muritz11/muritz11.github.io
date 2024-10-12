@@ -101,13 +101,17 @@ function App() {
               clients develop user-centric digital products and experiences.{' '}
               <br />
               <br />
-              My interest in web development started in 2019 when I decided to
+              My interest in web development started in 2020 when I decided to
               try out new digital skills — turns out i enjoy creating things
               that live on the internet! <br />
-              Fast-forward to today, and I’ve had the privilege of interning at
-              Genesys Tech Hub, working with a Web Academy to tutor and bring up
-              young tech talents and building multiple project that has taught
-              me a lot about web technologies. <br />
+              Since then, I've had the privilege of interning at Genesys Tech
+              Hub, mentoring young tech talents at Digital Dreams Web Academy.
+              Additionally, I've had the opportunity to collaborate with
+              innovative companies such as FlowRhythm, PortsConnect, Teranium
+              Co, and others, while also gaining extensive experience working
+              with startups and managing the product life cycle from development
+              to production, driving growth and innovation.
+              <br />
               <br />
               You can reach through any of the following social media channels.
             </p>

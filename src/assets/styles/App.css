@@ -352,6 +352,10 @@ nav {
     margin-bottom: 150px;
   }
 
+  #projects {
+    overflow-x: hidden;
+  }
+
   .w-75-85 {
     width: 80%;
   }
