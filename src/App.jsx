@@ -21,9 +21,31 @@ import AOS from 'aos'
 import Nav from './components/Nav'
 
 function App() {
+  const [isVisible, setIsVisible] = useState(false)
   const [particlesInit, setParticlesInit] = useState(false)
   const date = new Date()
   const currentYear = date.getFullYear()
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true)
+    } else {
+      setIsVisible(false)
+    }
+  }
+
+  // Scroll the page to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // This enables smooth scrolling
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility)
+  }, [])
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -264,12 +286,16 @@ function App() {
         <p className="text-mute">Copyright &copy; {currentYear} Muritz</p>
       </footer>
 
-      <a
-        href="#"
-        className="btn btn-success position-fixed go2top"
-        data-aos="fade-up">
-        <FaChevronUp />
-      </a>
+      {isVisible ? (
+        <button
+          className="btn btn-success position-fixed go2top"
+          data-aos="fade-up"
+          onClick={scrollToTop}>
+          <FaChevronUp />
+        </button>
+      ) : (
+        ''
+      )}
     </>
   )
 }
