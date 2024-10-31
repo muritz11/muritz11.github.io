@@ -1,10 +1,19 @@
 import Lo3re from './assets/images/lo3re.png'
 import Sincerely from './assets/images/sincerely.png'
 import Flow from './assets/images/flow.jpg'
+import GCW from './assets/images/gcw.jpg'
 import Canbel from './assets/images/canbel_logo.jpg'
 import Flash from './assets/images/screencapture-flashdashboard-netlify-app-dashboard-2022-06-14-20_01_17.png'
 
 export const Projects = [
+  {
+    name: 'GCW store',
+    category: 'E-commerce',
+    desc: 'Explore a collection of crochet wearables. Browse handmade treasures for everyday elegance.',
+    tools: ['PHP', 'Laravel', 'MySQL'],
+    coverImg: GCW,
+    link: 'https://gcwstores.shop/',
+  },
   {
     name: 'Lo3re',
     category: 'Games',
