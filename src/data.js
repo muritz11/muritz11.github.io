@@ -3,6 +3,7 @@ import Sincerely from './assets/images/sincerely.png'
 import Flow from './assets/images/flow.jpg'
 import GCW from './assets/images/gcw.jpg'
 import Canbel from './assets/images/canbel_logo.jpg'
+import ChatEsm from './assets/images/chat-esm.png'
 import Flash from './assets/images/screencapture-flashdashboard-netlify-app-dashboard-2022-06-14-20_01_17.png'
 
 export const Projects = [
@@ -15,12 +16,12 @@ export const Projects = [
     link: 'https://gcwstores.shop/',
   },
   {
-    name: 'Lo3re',
-    category: 'Games',
-    desc: "Play, Create, Win - Your Lottery, Your Rules! Whether you're a seasoned Game Master or an avid player, Lo3re is your ticket to an unparalleled lottery experience.",
-    tools: ['javascript', 'react', 'redux', 'typescript', 'firebase'],
-    coverImg: Lo3re,
-    link: 'https://www.lo3re.com/',
+    name: 'ChatESM',
+    category: 'AI Agent',
+    desc: 'Your trusted resource for expert guidance, and insightful content on ITSM practices. Our AI chat platform provides expert guidance on ITSM practices. We offer resources, visual aids, and custom content generation to help you achieve your IT and business objectives.',
+    tools: ['javascript', 'react', 'redux toolkit', 'typescript'],
+    coverImg: ChatEsm,
+    link: 'https://chat-esm.vercel.app/',
   },
   {
     name: 'Sincerely Yours',
