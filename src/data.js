@@ -17,7 +17,7 @@ export const Projects = [
   },
   {
     name: 'ChatESM',
-    category: 'AI Agent',
+    category: 'AI Chatbot',
     desc: 'Your trusted resource for expert guidance, and insightful content on ITSM practices. Our AI chat platform provides expert guidance on ITSM practices. We offer resources, visual aids, and custom content generation to help you achieve your IT and business objectives.',
     tools: ['javascript', 'react', 'redux toolkit', 'typescript'],
     coverImg: ChatEsm,
