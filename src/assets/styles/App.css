@@ -44,6 +44,14 @@ nav {
   margin-bottom: 270px;
 }
 
+.service-title {
+  font-size: 22px;
+}
+
+.service-text {
+  font-size: 14px;
+}
+
 .project {
   margin-top: 120px !important;
   overflow-x: hidden;
@@ -190,7 +198,7 @@ nav {
 }
 
 .w-75-85 {
-  width: 75%;
+  width: 90%;
 }
 
 .social svg:hover,

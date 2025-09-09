@@ -9,13 +9,8 @@ import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 import { opt } from './particleObj'
 import { FaXTwitter, FaChevronUp } from 'react-icons/fa6'
-import {
-  FaDatabase,
-  FaCode,
-  FaMobileAlt,
-  FaLinkedin,
-  FaGithub,
-} from 'react-icons/fa'
+import { FaCode, FaCloud, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { BsFillLightningChargeFill } from 'react-icons/bs'
 import AOS from 'aos'
 
 import Nav from './components/Nav'
@@ -118,7 +113,7 @@ function App() {
             </h2>
             <p className="pt-4 pb-2 text-white-50" data-aos="fade-up">
               A Frontend developer well versed in HTML, CSS, Javascript,
-              Boostrap and React, I also dabble with PHP, MYSQL and Laravel. I
+              Typescript and React. I also dabble with PHP, MYSQL and Laravel. I
               craft awesome websites, landing pages and web apps, helping
               clients develop user-centric digital products and experiences.{' '}
               <br />
@@ -129,10 +124,10 @@ function App() {
               Since then, I've had the privilege of interning at Genesys Tech
               Hub, mentoring young tech talents at Digital Dreams Web Academy.
               Additionally, I've had the opportunity to collaborate with
-              innovative companies such as FlowRhythm, PortsConnect, Teranium
-              Co, and others, while also gaining extensive experience working
-              with startups and managing the product life cycle from development
-              to production, driving growth and innovation.
+              innovative companies such as Canbel Technologies, HQ Language
+              Services, Teranium Co., and others, while also gaining extensive
+              experience working with startups and managing product life cycles
+              from development to production, driving growth and innovation.
               <br />
               <br />
               You can reach through any of the following social media channels.
@@ -174,7 +169,7 @@ function App() {
       </section>
 
       <section id="services" className="w-75-85 mx-auto">
-        <p className="text-white-50 text-center" data-aos="fade-up">
+        <p className="text-white-50 text-center mb-1" data-aos="fade-up">
           WHAT I DO
         </p>
         <h1 className="text-center mb-3" data-aos="fade-up">
@@ -185,37 +180,42 @@ function App() {
             <div className="serv-icon m-3 text-success">
               <FaCode />
             </div>
-            <h3>Web Design</h3>
-            <p className="text-white-50">
-              I value simple, modern, clean design patterns and thoughtful
-              interactive user interfaces and improved user experience.
+            <h3 className="service-title">Web Development & Design</h3>
+            <p className="text-white-50 service-text">
+              I build modern, responsive, user-friendly websites and
+              applications using React, Typescript, and clean UI/UX principles.
+              From landing pages to complex web apps, I craft interfaces that
+              are both functional and visually appealing.
             </p>
           </div>
           <div className="col-md-4 text-center serv" data-aos="zoom-in-up">
             <div className="serv-icon m-3 text-success">
-              <FaDatabase />
+              <BsFillLightningChargeFill />
             </div>
-            <h3>Perfomance and SEO</h3>
-            <p className="text-white-50">
-              Maintain a striking balance between functional and aesthetic
-              design, optimizing web page perfomance and SEO.
+            <h3 className="service-title">Performance, SEO & Optimization</h3>
+            <p className="text-white-50 service-text">
+              I help businesses scale by optimizing web performance,
+              accessibility, and SEO. My approach balances technical efficiency
+              with design, ensuring fast load times and strong visibility across
+              search engines.
             </p>
           </div>
           <div className="col-md-4 text-center serv" data-aos="zoom-in-up">
             <div className="serv-icon m-3 text-success">
-              <FaMobileAlt />
+              <FaCloud />
             </div>
-            <h3>Mobile friendly</h3>
-            <p className="text-white-50">
-              A responsive design makes your website accessible to all users,
-              regardless of their devices.
+            <h3 className="service-title">Deployment & Hosting Support</h3>
+            <p className="text-white-50 service-text">
+              I help businesses deploy, manage, and maintain their websites/web
+              apps — from shared hosting to cloud setups — ensuring reliability,
+              security, and smooth operation.
             </p>
           </div>
         </div>
       </section>
 
       <section id="projects" className="w-75-85 mx-auto">
-        <p className="text-white-50 text-center" data-aos="fade-up">
+        <p className="text-white-50 text-center mb-1" data-aos="fade-up">
           RECENT WORKS
         </p>
         <h1 className="text-center mb-3" data-aos="fade-up">
