@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Resume from '../assets/images/abuguja maurice.pdf'
+import Resume from '../assets/images/Maurice.pdf'
 import { FaXTwitter } from 'react-icons/fa6'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
