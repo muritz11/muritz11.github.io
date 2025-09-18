@@ -130,7 +130,8 @@ function App() {
               from development to production, driving growth and innovation.
               <br />
               <br />
-              You can reach through any of the following social media channels.
+              You can reach me through any of the following social media
+              channels.
             </p>
             <div>
               <h4 className="pb-2">
