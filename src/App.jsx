@@ -230,7 +230,9 @@ function App() {
               key={`prj-${idx}`}>
               <div className={idx % 2 === 0 ? 'd-md-none' : 'col-md-6'}>
                 <div className="position-relative icon">
-                  <img src={project.coverImg} alt={project.name} />
+                  <a href={project.coverImg} target={'_blank'}>
+                    <img src={project.coverImg} alt={project.name} />
+                  </a>
                 </div>
               </div>
 
@@ -260,7 +262,9 @@ function App() {
               {idx % 2 === 0 ? (
                 <div className="col-md-6 d-md-block d-none">
                   <div className="position-relative icon">
-                    <img src={project.coverImg} alt={project.name} />
+                    <a href={project.coverImg} target={'_blank'}>
+                      <img src={project.coverImg} alt={project.name} />
+                    </a>
                   </div>
                 </div>
               ) : (

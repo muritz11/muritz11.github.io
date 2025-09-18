@@ -1,11 +1,20 @@
 import Sincerely from './assets/images/sincerely.png'
 import GCW from './assets/images/gcw.jpg'
-import Canbel from './assets/images/canbel_logo.jpg'
+// import Canbel from './assets/images/canbel_logo.jpg'
 import ChatEsm from './assets/images/chat-esm.png'
-import HQLS from './assets/images/hqls.png'
+import HQLS from './assets/images/hqls-mockup.png'
+import CanbelHub from './assets/images/canbel-mockup.png'
 // import Shoelon from './assets/images/shoelon.png'
 
 export const Projects = [
+  {
+    name: 'Canbel Hub',
+    category: 'Alumni Directory',
+    desc: 'Welcome to Canbel Alumni Network - your gateway to reconnecting with your academic past and building lasting professional relationships. Explore an exhaustive directory of former classmates, discover your old peers, and forge meaningful connections that span across graduation years',
+    tools: ['php', 'laravel', 'mysql', 'inertiajs', 'react', 'tailwind css'],
+    coverImg: CanbelHub,
+    link: 'https://canbelhub.com',
+  },
   {
     name: 'HQ Language Services',
     category: 'Language Translation Services',
@@ -46,12 +55,12 @@ export const Projects = [
     coverImg: Sincerely,
     link: 'https://sincerelyyours.com.ng/',
   },
-  {
-    name: 'Canbel Technologies',
-    category: 'Data Acquisition Assessment and Management System',
-    desc: 'Contributed and maintained code for seamless card payment using Paystack payment gateway API',
-    tools: ['php', 'mysql'],
-    coverImg: Canbel,
-    link: 'https://www.canbeltech.com/',
-  },
+  // {
+  //   name: 'Canbel Technologies',
+  //   category: 'Data Acquisition Assessment and Management System',
+  //   desc: 'Contributed and maintained code for seamless card payment using Paystack payment gateway API',
+  //   tools: ['php', 'mysql'],
+  //   coverImg: Canbel,
+  //   link: 'https://www.canbeltech.com/',
+  // },
 ]
