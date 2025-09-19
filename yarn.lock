@@ -816,6 +816,18 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@usermaven/react@^1.5.8":
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/@usermaven/react/-/react-1.5.8.tgz#c5e7fe8735caebd3bc070d84bf18c91f28a8f2ac"
+  integrity sha512-l7fSttHdp2O/4ZodtGOiseFLGlXVleOUXRlCiKAuEyWm22YtYavHnebGN52iX2R9p6aJ8j6ZC8boTsIBH7gjgg==
+  dependencies:
+    "@usermaven/sdk-js" "1.5.8"
+
+"@usermaven/sdk-js@1.5.8":
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/@usermaven/sdk-js/-/sdk-js-1.5.8.tgz#f7f4f64201d0b20f35250d1fdf7cf70a1c21a189"
+  integrity sha512-16CEbORfGIJX78eEH4IUV1xwvUXShV6ifwsOgJrh1dJBAm8zU5uf3RZhqteDDPevDtABxWmkqTPFHEHnBv2naQ==
+
 "@vitejs/plugin-react@^1.2.0":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-1.3.2.tgz#2fcf0b6ce9bcdcd4cec5c760c199779d5657ece1"
