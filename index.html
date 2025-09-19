@@ -2,30 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/src/assets/images/118-macbook.png" type="image/x-icon">
-    <meta property="og:image" content="/src/assets/images/118-macbook.png"/>
+    <link
+      rel="icon"
+      href="/src/assets/images/118-macbook.png"
+      type="image/x-icon"
+    />
+    <meta property="og:image" content="/src/assets/images/118-macbook.png" />
     <link rel="image_src" href="/src/assets/images/118-macbook.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Maurice is a seasoned Frontend developer who is committed to creating user-centric digital products">
+    <meta
+      name="description"
+      content="Maurice is a seasoned Frontend developer who is committed to creating user-centric digital products"
+    />
     <title>Maurice - Frontend developer</title>
+
+    <!-- analytics -->
+    <script type="text/javascript">
+      ;(function () {
+        window.usermaven =
+          window.usermaven ||
+          function () {
+            ;(window.usermavenQ = window.usermavenQ || []).push(arguments)
+          }
+        var t = document.createElement('script'),
+          s = document.getElementsByTagName('script')[0]
+        t.defer = true
+        t.id = 'um-tracker'
+        t.setAttribute('data-tracking-host', 'https://events.usermaven.com')
+        t.setAttribute('data-key', 'UMSdyU8O1V')
+        t.setAttribute('data-autocapture', 'true')
+        t.setAttribute('data-privacy-policy', 'strict')
+        t.src = 'https://t.usermaven.com/lib.js'
+        s.parentNode.insertBefore(t, s)
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script type="text/javascript">     
-    (function () {
-        window.usermaven = window.usermaven || (function () { (window.usermavenQ = window.usermavenQ || []).push(arguments); })
-        var t = document.createElement('script'),
-            s = document.getElementsByTagName('script')[0];
-        t.defer = true;
-        t.id = 'um-tracker';
-        t.setAttribute('data-tracking-host', "https://events.usermaven.com")
-        t.setAttribute('data-key', 'UMSdyU8O1V');
-        t.setAttribute('data-autocapture', 'true'); 
-        t.setAttribute('data-privacy-policy', 'strict'); 
-        t.src = 'https://t.usermaven.com/lib.js';
-        s.parentNode.insertBefore(t, s);
-    })();
-  </script>
   </body>
 </html>
