@@ -131,6 +131,7 @@ const Home = () => {
               You can reach me through any of the following social media
               channels.
             </p>
+
             <div>
               <h4 className="pb-2">
                 <a
