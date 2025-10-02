@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Nav from './components/Nav'
-import { usePageView, useUsermaven } from '@usermaven/react'
 import { Projects } from './data'
 import Astra from './assets/images/astronaut-animate.svg'
 import Resume from './assets/images/Maurice.pdf'
@@ -12,16 +11,6 @@ import { FaCode, FaCloud, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { BsFillLightningChargeFill } from 'react-icons/bs'
 
 const Home = () => {
-  usePageView()
-  const { track } = useUsermaven()
-  const handleButtonClick = (btnId, btnVal) => {
-    track('button_click', {
-      buttonId: btnId,
-      page: 'home',
-      value: btnVal,
-    })
-  }
-
   const [isVisible, setIsVisible] = useState(false)
   const [particlesInit, setParticlesInit] = useState(false)
   const date = new Date()
@@ -131,7 +120,6 @@ const Home = () => {
               You can reach me through any of the following social media
               channels.
             </p>
-
             <div>
               <h4 className="pb-2">
                 <a
@@ -230,12 +218,7 @@ const Home = () => {
               key={`prj-${idx}`}>
               <div className={idx % 2 === 0 ? 'd-md-none' : 'col-md-6'}>
                 <div className="position-relative icon">
-                  <a
-                    href={project.coverImg}
-                    target={'_blank'}
-                    onClick={() =>
-                      handleButtonClick('project-image', project.name)
-                    }>
+                  <a href={project.coverImg} target={'_blank'}>
                     <img src={project.coverImg} alt={project.name} />
                   </a>
                 </div>
@@ -260,9 +243,6 @@ const Home = () => {
                 <a
                   href={project.link}
                   target="_blank"
-                  onClick={() =>
-                    handleButtonClick('project-link', project.name)
-                  }
                   className="text-decoration-none btn btn-outline-success">
                   View Project
                 </a>
@@ -270,12 +250,7 @@ const Home = () => {
               {idx % 2 === 0 ? (
                 <div className="col-md-6 d-md-block d-none">
                   <div className="position-relative icon">
-                    <a
-                      href={project.coverImg}
-                      target={'_blank'}
-                      onClick={() =>
-                        handleButtonClick('project-image', project.name)
-                      }>
+                    <a href={project.coverImg} target={'_blank'}>
                       <img src={project.coverImg} alt={project.name} />
                     </a>
                   </div>
