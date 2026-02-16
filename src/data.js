@@ -4,7 +4,7 @@ import GCW from './assets/images/gcw.jpg'
 import ChatEsm from './assets/images/chat-esm.png'
 import HQLS from './assets/images/hqls-mockup.png'
 import CanbelHub from './assets/images/canbel-mockup.png'
-// import Shoelon from './assets/images/shoelon.png'
+import Shoelon from './assets/images/shoelon.png'
 
 export const Projects = [
   {
@@ -23,14 +23,14 @@ export const Projects = [
     coverImg: HQLS,
     link: 'https://financialtranslationservices.com/',
   },
-  // {
-  //   name: 'Shoelon stores',
-  //   category: 'E-commerce',
-  //   desc: "Handmade footwear, vintage shirts & bags. We create unique designs that's bespoke.",
-  //   tools: ['PHP', 'Laravel', 'MySQL'],
-  //   coverImg: Shoelon,
-  //   link: 'https://shoelonstores.valleytechhq.com/',
-  // },
+  {
+    name: 'Shoelon stores',
+    category: 'E-commerce',
+    desc: "Handmade footwear, vintage shirts & bags. We create unique designs that's bespoke.",
+    tools: ['PHP', 'Laravel', 'MySQL'],
+    coverImg: Shoelon,
+    link: 'https://shoelon.canbelhub.com',
+  },
   {
     name: 'ChatESM',
     category: 'AI Chatbot',
@@ -45,7 +45,7 @@ export const Projects = [
     desc: 'Explore a collection of crochet wearables. Browse handmade treasures for everyday elegance.',
     tools: ['PHP', 'Laravel', 'MySQL'],
     coverImg: GCW,
-    link: 'https://gcwstores.shop/',
+    link: 'https://gcwears.canbelhub.com/',
   },
   {
     name: 'Sincerely Yours',
